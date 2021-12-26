@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div id="topRow">
+			<div id="megaStats" class="stats">
+				<span class="healthLabel">HEALTH</span><br>
+				<div class="hpBorder">
+					<div id="megaManHP" class="hpBar"></div>
+				</div>
+				<p id="megaMoves">
+					<span class="healthLabel">MOVES</span><br>
+					<button onclick="blast()" class="buttonStyle">Attack</button>
+					<button onclick="blast()" class="buttonStyle">Special Attack</button>
+				</p>
+				
+			</div>
+			<div id="megaMan" class="chars">
+				<img src="images/megaman-stand.png">
+			</div>	
+			<div id="attack"></div>
+			<div id="enemyAttack"></div>
+			<div id="veigar" class="chars">
+				<img src="images/latest.jpg">
+			</div>
+			<div id="veigStats" class="stats">
+				<span class="healthLabel">HEALTH</span><br>
+				<div class="hpBorder">
+					<div id="veigHP" class="hpBar"></div>
+				</div>
+			</div>
+		</div>
+		<div id="bottomRow">
+			<button onclick="beginBattle()" class="buttonStyle">STAR</button>
+		</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

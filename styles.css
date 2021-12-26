@@ -1,0 +1,94 @@
+#topRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#megaMan {
+	
+}
+
+#megaMan img {
+	height: 200px;
+}
+
+#Slime {
+	
+}
+
+#Slime img {
+	transform: scaleX(-1);
+}
+
+.chars {
+	margin: 15px 40px;
+}
+
+#bottomRow {
+	padding: 20px;
+	font: 20pt Arial;
+	text-align:center;
+}
+
+.stats {
+	width: 350px;
+	height: 400px;
+	visibility: hidden;
+}
+
+.healthLabel {
+	font: 32pt 'Bebas Neue';
+	font-weight: bold;
+}
+
+.buttonStyle {
+	background-color: white;
+	border: 5px solid;
+	border-color: black;
+	font: 24pt Arial;
+	border-radius: 20px;
+	padding: 10px 35px;
+	font-weight: bold;
+}
+
+.buttonStyle:hover {
+	background-color: black;
+	color: white;
+}
+
+.hpBorder {
+	width: 300px;
+	height: 30px;
+	border: 3px solid;
+	border-color: black;
+}
+
+.hpBar {
+	width: 300px;
+	height: 30px;
+	background-color: green;
+	transition-duration: 2s;
+}
+
+#attack {
+	left: 50%;
+}
+#enemyAttack {
+	
+}
+@keyframes shoot {
+	0% {margin-left:-70px;}
+	99%{margin-left: 200px;}
+	100%{display: none;}
+}
+
+.blast {
+	margin-left: 200px;
+	width: 100px;
+	position: absolute;
+	top: 550px;
+	animation-name: shoot;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
